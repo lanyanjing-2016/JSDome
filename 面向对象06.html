@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		    //什么是原型式继承：
+		    //对象继承自原型对象
+		    
+		    //所谓的原型继承，就是在对象的原型中加东西
+		    
+		    //如何使用原型对象
+		     
+		    var person=function(){};
+		    person.prototype.sayhello=function(){
+		    	console.log("hello");
+		    };
+		    person.prototype.saylove=function(){
+		    	console.log("sing");
+		    };
+		    //....
+		    //此时对象的原型是对象，可以随时利用对象的动态特性添加属性
+		    //添加的属性，都会随时的被构造函数的对象继承
+		    
+		    //如果添加的属性比较多的时候
+//		    person.prototype=function(){
+//		    	sayhello:function(){},
+//		    	saysing:function(){}
+//		    }
+		    
+		    var obj1={name:'zhangsan'};
+		    var obj2=Object.create(obj1);
+		    //在实际的开发过程中，对象o2要继承对象o1可以会用Object.create();
+		    //Object.create()作为原型对象的对象
+		    
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

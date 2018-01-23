@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		     //凡是函数就有属性prototype
+		     //由某一个函数new出来的对象，会自动的链接到该函数的prototype
+		     function fn1(){};
+		     function fn2(){};
+		     var f1=new fn1();//会自动的连接到fn1.prototype
+		     var f2=new fn2();//会自动的链接到fn2.prototype
+		     
+		     //测试
+		     var o1=new Object(); //=>obnect.prototype
+		     var arr=new Array(3); //=>array.prototype
+		     var d=new Date();//=>data.prototype
+		     
+		     //连接到prototype 有什么用
+		     
+		     var p={
+		     	name:'张三',
+		     	age:20,
+		     	say:function(){
+		     		alert("hello");
+		     	}
+		     };
+		     //访问对象的属性时，先在该对象中找，如果找不到就去原型prototype中找
+		     //原型对象：就是构造函数的prototype属性
+		     
+		     //_proto_ 与prototype有什么区别
+		     //_proto_是站在对象的角度讨论其原型对象
+		     //prototype 是站在构造函数的角度讨论原型对象，或构造函数创建的对象的的原型对象
+		     
+		     
+		     //setTimeout  //=>多少秒后执行一次
+		     //setInterval //=>多少秒后执行，再间隔多少秒后再执行，直到遇到clearInterval
+		     
+		     
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

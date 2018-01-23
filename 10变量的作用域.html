@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		//变量的作用域：变量在什么位置可以使用
+ 
+        //全局作用域:在任何位置都可以访问
+        //全局变量
+//        var name = "a";
+//        console.log(name);
+//
+//        function f1 () {
+//            console.log(name);
+//        }
+//        f1();
+ 
+        //局部作用域:在函数内部声明一个变量，只能在该函数内部使用
+//        function f1 () {
+//            //不使用var声明的变量是全局变量
+//            a = 5;
+//
+//            console.log(a);
+//            //局部变量
+//            var name = "aaa";
+//            console.log(name);
+//        }
+//        f1();
+//
+//        console.log(a);
+//
+//        console.log(name);
+ 
+        //当变量超出作用域之后，变量会被销毁
+        //不使用var声明的变量是全局变量
+ 
+ 
+ 
+ 
+ 
+        //JavaScript中没有块级作用域
+        //块级作用域
+ 
+//        {
+//            //代码块
+//            //在其他语言中，在代码块中定义的变量，外部是访问不到的
+//            //但是JavaScript中没有块级作用域
+//
+//
+//            //全局变量
+//            var name = "abc";
+//            console.log(name);
+//        }
+//
+//        console.log(name);
+ 
+//        if (true) {
+//            var name = "abc";
+//        }
+//
+//        console.log(name);
+ 
+ 
+//      for (var i = 0; i < 10; i++) {
+//           var name = "abc";
+//      } 
+//      console.log(name);
+//      console.log(i);
+
+/****************面试题***********************/
+//        1、-----------------------------------
+        //解析器：
+//       预解析  全局作用域
+//                先找var、function和参数
+//                找到var和function之后，会把var和function提前
+//                num   fun
+//                从上到下一行一行执行代码
+//                num = 10;
+//                fun();
+//                执行到fun后，进入局部作用域
+//                预解析
+//                 num
+//                 从上到下一行一行执行代码
+//        var num;
+//        function fun(){
+//            var num;
+//            console.log(num);
+//            num = 20;
+//        }
+//        num = 10;
+//        fun();
+ 
+ 
+         
+ 
+ 
+          
+//        2、-----------------------------------
+        //解析器：
+            //全局作用域  预解析  找var function  和参数
+                //var a;
+                //function f1()
+            //一行一行执行代码
+                //a = 18;
+                //f1();
+                //f1的作用域
+                    //预解析
+                        //var b;
+                        //var a;
+                    //一行一行执行代码
+                        //b=9;
+                        //
+ 
+//        var a;
+//        function f1(){
+//            var b;
+//            var a; 
+//            b=9;
+//            console.log(a);
+//            console.log(b);
+//            a = '123';
+//        } 
+//        a = 18;
+//        f1();
+ 
+ 
+//        var a = 18;
+//        function f1 () {
+//            //现在当前作用域下找变量a，如果当前作用域没有变量a，会去上一级作用域找变量a，如果找到了，就获取a的值
+//            console.log(a);
+//        }
+//        f1();
+ 
+//        var a = 18;
+//        f1();
+//        function f1(){
+//            var b=9;
+//            console.log(a);
+//            console.log(b);
+//            var a = '123';
+//        }
+////        3、-----------------------------------
+ 
+        //解析器
+        //全局作用域  预解析  var  function 参数
+            //预解析
+                //function f1()
+            //一行一行执行代码
+                //f1() 局部作用域
+                    //预解析
+                        //var a;
+                    //一行一行执行代码
+ 
+//          function f1(){ 
+//              var a;
+//              a = b = c = 9;
+//              console.log(a);
+//              console.log(b);
+//              console.log(c); 
+//          } 
+//          f1();
+//          console.log(c);
+//          console.log(b);
+//          console.log(a);
+ 
+        //当变量没有声明就去使用，报错  console.log(name);
+        //当变量声明了没有赋值，undefined    var name; console.log(name);
+ 
+ 
+ 
+//        f1();
+//        console.log(c);
+//        console.log(b);
+//        console.log(a);
+//        function f1(){
+//            var a = b = c = 9;
+//            console.log(a);
+//            console.log(b);
+//            console.log(c);
+//        }
+ 
+ 
+ 
+//        var myFun;
+////      console.log(myFun);  undefined
+//        myFun();
+//        myFun = function () { 
+//        };
+ 
+        //什么时候是局部变量
+        //在函数内部使用var声明的变量 局部变量
+        //什么时候是全局变量
+        //只要在<script>标签内部定义的变量全局变量，不使用var声明直接使用的变量全局变量
+ 
+//      var a = 5000;
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

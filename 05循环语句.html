@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+//		 for(var i = 0; i < 100; i++) {
+//	              console.log(i);
+//	       }
+ 
+//1 打印1到100
+//2 打印1到100的和
+//    var sum = 0;
+//    for(var i=1; i <= 100; i++) { 
+//          sum += i; 
+//         console.log(i);
+//    }
+//    console.log(sum);
+ 
+//3 求1-100之间所有数的和、平均值
+//    var sum = 0, avg;
+//    for (var i = 1; i <= 100; i++) {
+//        sum += i;
+//    }
+//    avg = sum / 100;
+//    console.log(avg);
+//    console.log(sum);
+ 
+//4 求1-100之间所有偶数的和、所有奇数的和
+//    var evenSum = 0;//偶数
+//    var oddSum = 0; //奇数
+//    for (var i = 1; i <= 100; i++) {
+//        //判断奇偶数
+//        if (i % 2 == 0) {
+//            //偶数
+//            evenSum += i;
+//        }else{
+//            //奇数
+//            oddSum += i;
+//        }
+//    }
+//    console.log(evenSum);
+//    console.log(oddSum);
+ 
+//5 本金10000元存入银行，年利 率是千分之三，每过1年，将本金和利息相加作为新的本金。计算5年后，获得的本金是多少？
+//    var money = 10000;  //本金
+//    var rate = 0.003;   //年利率
+//
+////第一年
+////    money = money + money * rate;
+//    for (var i = 0; i < 5; i++) {
+////        money = money + money*rate;
+////        money += money * rate;
+////        money = (1 + rate) * money;
+ 
+//          money *= 1 + rate;
+//    }
+//    console.log(money);
+ 
+ 
+//6 有个人想知道，一年之内一对兔子能繁殖多少对？于是就筑了一道围墙把一对兔子关在里面。已知一对兔子每个月可以生一对小兔子，而一对兔子从出生后第3个月起每月生一对小兔子。假如一年内没有发生死亡现象，那么，一对兔子一年内（12个月）能繁殖成多少对？
+//兔子的规律为数列，1，1，2，3，5，8，13，21
+        var n1 = 1; //第一个月的对数
+        var n2 = 1; //第二个月的对数
+ 
+//      for (var i= 3; i <= 12; i++) {
+//          //第n个月的对数
+//          sum = n1 + n2;
+//          n1 = n2;
+//          n2 = sum;
+//      }
+//      console.log(n1);
+//      console.log(n2);
+
+//        1 打印9*9乘法表
+ 
+          document.write("<div>aasdfa</div>");
+          document.write("<table border='1px' cellpadding='0' cellspacing='0'>");
+          for (var i = 1; i <= 9; i++) {
+              //外循环 控制行
+              document.write("<tr>");
+              for (var j=1; j<=i; j++) {
+                  document.write("<td>");
+                  document.write(i + "*" + j + "=" + i*j);
+                  document.write("</td>");
+              }
+              document.write("</tr>");
+          }
+
+          document.write("</table>");
+ 
+ 
+//        2 打印正方形
+        for (var i = 0; i < 10; i++) {
+            //外层循环  控制行
+            for (var j = 0; j < 10; j++) {
+                document.write("☆");
+            } 
+            //换行
+            document.write("<br />");
+        };
+//        3 打印直角三角形
+ 		for (var i = 0; i < 10; i++) {
+            //外层循环  控制行
+            for (var j = 0; j < i; j++) {
+                document.write("☆");
+            } 
+            //换行
+            document.write("<br />");
+        }
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

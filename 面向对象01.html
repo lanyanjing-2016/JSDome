@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//写一个人对象，要求有姓名，性别，年龄，sayhello方法
+			//什么是对象：{key:value}键值对的集合
+			//使用json对象的方法有一个缺点，无法复用
+//			var p={
+//					name:'aa',
+//					age:'20',
+//					sex:'girl',
+//					sayhello:function(){
+//						console.log("ddddddd");
+//					}
+//			}
+			
+			
+			//使用构造函数的方法：
+//			var person=function(name,sex,age){
+//				//构造函数中不需要return
+//				//为对象添加成员使用 this.成员=值
+//				this.name='aa';  
+//				this.sex='boy';
+//				this.age='20';
+//				this.say=function(){
+//					alert("hello"+this.name);
+//				}				
+//			}
+//			var p1=new person("张三",'男',20);
+//			console.log(p1.say());
+			
+			
+			//在函数中有一个默认的prototype
+//			function fn(mynum){
+//				this.num=mynum;
+//				this.say=function(){
+//					console.log(this.num);
+//				}
+//			}
+//			fn.prototype.num=123;
+//			var f1=new fn('789');
+//			var f2=new fn('456');			
+//			console.log(f1.say===f2.say);//false
+//			
+//			
+//			function fn2(){				 
+//			}
+//			fn2.prototype.name='李四';
+//			fn2.prototype.say=function(){
+//				console.log(this.num);
+//			}
+//			var f3=new fn2();
+//			var f4=new fn2();			
+//			console.log(f3.say===f4.say);//true
+//			console.log(f3.name===f4.name);//true;
+//			console.log(f3.name);//李四
+//			
+//			f3.name='张三'; //代表f3中新增了属性name，原型中的prototype.name没有改变
+//			console.log(f3.name);//张三
+//			console.log(f4.name);//李四
+			
+			//在访问对象的某一个属性（方法）的时候，现在自身中去查找是否有该属性，如果没有就去原型中去找，
+			
+			
+			 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

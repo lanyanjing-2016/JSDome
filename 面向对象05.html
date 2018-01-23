@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		//面向对象的特征：封装  继承  多肽
+		    //封装：把复杂的包裹起来，把简单的预留在外面
+		    //继承：自己没有的，把别人的拿过来，变成自己的
+		    //多肽:在js里有两种继承方式：
+		           //1.原型继承
+		           
+		           
+		           //2.组合继承
+		           var o1={name:'张三',age:'20',sex:'男'};
+		           var o2={
+		           	       secore:{chinese:'50',english:'80'}
+		           	   };
+//		           for( k in o1){
+//		           	   o2[k]=o1[k];
+//		           }
+		           //此时o2就继承了o1的属性了
+		           //由于for in 循环中的对象可以任意替代，所以o2可以继承自任意的对象
+		           //这种继承成 为组合继承；
+		           
+		           //这里希望o2可以继承自任意的对象，为了简化给o2提供了一个extend()方法
+		           
+		           o2.extend=function(obj){
+		           	    for( k in obj){
+		 		           	   this[k]=obj[k];
+		 		           }
+		           };
+		           o2.extend(o1);//o2继承了o1;
+		           
+		           //也可以给o2添加属性和方法
+		           o2.extend({
+		           	 tag:function(tag){
+		           	 	console.log(11);
+		           	 }
+		           })
+		    
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

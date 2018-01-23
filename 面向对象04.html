@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		       //每一个对象都可以访问到一个属性
+		       //其中就有一个是 constructor(构造器)属性
+		       //每一个对象的constructor描述的是其构造函数 
+		       function  fn(){}
+		       var o=new fn();
+		       console.log(o.constructor===fn) //=>true
+		       
+		       //每一个对象都链接到其原型上，每一个constructor属性都是有原型提供的
+		       var obj={};
+		       console.log(obj.constructor);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

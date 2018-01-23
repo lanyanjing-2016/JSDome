@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script> 
+ 
+        //交换两个变量的值
+        var n1 = 50;
+        var n2 = 60;
+ //使用中间变量
+//        var tmp = n1;
+//        n1 = n2;
+//        n2 = tmp;
+//        console.log(n1);
+//        console.log(n2);
+ 
+ //不使用中间变量
+//      n1 = n1 + n2;
+//      n2 = n1 - n2;
+//      n1 = n1 - n2;
+//      console.log(n1);
+//      console.log(n2);
+ 
+ 
+//        var x = 60;
+//
+//
+//        x = "zs";
+ 
+//        console.log(typeof x);
+ 
+//        var num1 = 0.1;
+//        var num2 = 0.2;
+//
+//        console.log(num1 + num2 == 0.3); //=>false
+//
+//        console.log(num1 + num2); //=>0.30000004
+//
+//        console.log(0.06 * 100); //=>6
+//
+//        console.log(-5/0); //=>-Infinity
+//
+//        console.log(Number.MIN_VALUE);//=>5e-324
+//
+//        console.log(parseInt("abc"));//=>NAN
+// 
+//        console.log("abc"/10);//=>NAN
+ 
+ 
+//        var num = prompt("请输入一个数字"); 
+//        if(isNaN(num)) {
+//            console.log("不是数字");
+//        }else{
+//            console.log("是数字");
+//        }
+ 
+ 
+//        console.log(typeof NaN); //==>number
+//        console.log(isNaN(NaN)); //=>true
+//        console.log(NaN == NaN); //==>false
+ 
+ 
+ 
+        //   "abc"
+        console.log("\" \tabc\"");//=> "  abc"
+ 
+ 
+        //字符串的不可变
+//        var str = "hello";
+//        str = str + " itcast";
+//        console.log(str); //=>hello itcast
+ 
+ 
+//        var str = "";
+//        for (var i = 0; i < 10000; i++) {
+//            str += i;
+//        }
+         
+ 
+ 
+//        var a = "abc";
+//        var b = 100;
+//        console.log(a - b);//=>NaN
+ 
+ 
+        //判断变量是否有值
+        var msg = "0";
+ 
+        if (msg) {
+            //有值
+        }else{
+            //无值
+ 
+        }  
+        
+//几乎所有语言中||和&&都遵循“短路”原理， 如&&中第一个表达式为假就不会去处理第二个表达式，而||正好相反。js同样也遵循上述原则：
+//当逻辑或||时，找到为true的分项就停止处理，并返回该分项的值，否则执行完，并返回最后分项的值。
+//当逻辑与&&时，找到为false的分项就停止处理，并返回该分项的值。
+//转换规则:
+	//对象为true
+	//非零数字为true
+	//非空字符串为true
+	//其他为false
+        console.log(undefined || 0); //=>0 
+        console.log(0 || undefined);//=>undefined
+        console.log(3 || 0); //=>3
+        console.log(0 || 3);//=>3
+        console.log(-1 || 0);//=>-1
+        
+        
+    </script>
+	</head>
+	<body>
+	</body>
+</html>

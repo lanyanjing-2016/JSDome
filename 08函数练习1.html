@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+//求圆的面积 
+//        function getArea(r) {
+//            //过滤掉undefined  null NaN  ""  0
+//            r = r || 0;
+//            //todo 判断是否是数字 
+//            var pi = 3.1415926;
+//            return pi * r * r;
+//        } 
+//        var area = getArea(5);
+//        console.log(area);
+ 
+ 
+        /**
+         * 求圆的面积
+         * @param r 圆的半径 {number}
+         * @returns 圆的面积{number}
+         */
+//        function getArea(r) {
+//            //pi  Math.1PI
+//            //Math.pow()  //求平方
+//            r = r || 0;
+//            return Math.PI * Math.pow(r, 2);
+//        }
+ 
+ 
+ 
+ 
+        //函数的三要素
+        //1 函数的功能
+        //2 函数的参数
+        //3 函数的返回值
+ 
+ 
+ 
+        //求圆的周长
+ 
+        /**
+         * 求圆的周长
+         * @param r 半径 {number}
+         * @returns 周长 {number}
+         */
+//        function getLong (r) {
+//            r = r || 0;
+//            return 2 * Math.PI * r;
+//        }
+ 
+ 
+        //求2个数中的最大值
+ 
+        /**
+         * todo 你要写注释
+         * @param n1
+         * @param n2
+         * @returns {*|number}
+         */
+        function getMax1(n1, n2) {
+            n1 = n1 || 0;
+            n2 = n2 || 0; 
+            return n1 > n2 ? n1 : n2;
+        } 
+//        console.log(getMax(5,6));
+ 
+        //求3个数中的最大值
+//        //todo 注释
+          function getMax(a,b,c) {
+              //todo  判断
+              return (a > b ? a : b) > c ? (a > b ? a : b) : c;
+          }
+         // console.log(getMax(40,70,10));
+ 
+ 
+ 
+ 
+ 
+        //如果一个函数内部调用另一个函数，是怎么执行的 执行的过程
+        //当fun2执行完毕之后，会回到fun1继续往下执行
+        function fun1() {
+            console.log("fun1");
+            fun2();
+            console.log("over");
+        } 
+        function fun2() {
+            console.log("fun2");
+        } 
+        fun1();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		     //对象中有一个属性 _proto_
+		     //通过调试发现对象的 _proto_ 与创建他的构造函数prototype是同一个东西
+			 function fn(){}
+			 var o1=new fn();
+			 console.log(o1.__proto__===fn.prototype) //true
+			 
+			 fn.prototype  //原型属性
+			 o1.__proto__  //原型对象
+			 
+			 fn.prototype //是构造函数fn的原型属性
+			 fn.prototype //是对象o1的原型对象
+			 
+			 //在访问一个对象的属性的时候，先在该对象中找，如果没有就去原型中找
+			 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
